@@ -3,7 +3,8 @@
 """
 import redis
 import requests
-from fuctools import Callable
+from functools import wraps
+from typing  import Callable, Any
 
 
 def track_get_page(fn: Callable) -> Callable:
