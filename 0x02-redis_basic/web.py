@@ -8,7 +8,7 @@ from typing  import Callable, Any
 
 
 def track_get_page(fn: Callable) -> Callable:
-    """ gettor for get_page
+    """ getter for get_page
     """
     @wraps(fn)
     def wrapper(url: str) -> str:
